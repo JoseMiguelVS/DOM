@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV Dinamico</title>
+    <style>
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        body div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 10px 5px 5px black;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <label for="width">alto</label>
+        <input type="range" id="alto" min="100" max="1000">
+
+        <label for="height">ancho</label>
+        <input type="range" id="ancho" min="100" max="1000">
+
+        <label for="redius">radio</label>
+        <input type="range" id="radio" min="5" max="300">
+
+        <label for="sombra">sombra</label>
+        <input type="range" id="sombra1" min="0" max="50">
+        <input type="range" id="sombra2" min="0" max="50">
+        <input type="range" id="sombra3" min="0" max="50">
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
