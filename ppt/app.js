@@ -2,7 +2,9 @@
 const images = document.querySelectorAll('.images img');
 const imgUser = document.querySelector('#choiceuser');
 const imgCompu = document.querySelector('#choicecompu');
-const resultado = document.querySelector('#result span')
+const resultado = document.querySelector('#result span');
+
+const choices = Array.from(images).map(image => image.getAttribute);
 
 const getChoiceUser = (e) => {
     const image = e.target;
@@ -36,7 +38,6 @@ const play = choiceUser => {
     } else {
         message = 'perdiste'
     }
-
     resultado.innerText = message;
 }
 

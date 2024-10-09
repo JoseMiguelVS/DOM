@@ -19,7 +19,7 @@ const cambiarAlto = () =>{
     return `${alto}px`;
 }
 
-inputAlto.addEventListener('change', (e) =>{
+inputAlto.addEventListener('input', (e) =>{
     alto = e.target.value; // lee los datos del range
     div.style.height = cambiarAlto();
 });
@@ -28,7 +28,7 @@ const cambiarAncho = () =>{
     return `${ancho}px`;
 }
 
-inputAncho.addEventListener('change', (e) =>{
+inputAncho.addEventListener('input', (e) =>{
     ancho = e.target.value;
     div.style.width = cambiarAncho();
 });
@@ -37,7 +37,7 @@ const cambiarRadio = () =>{
     return `${radio}px`;
 }
 
-inputRadio.addEventListener('change', (e) =>{
+inputRadio.addEventListener('input', (e) =>{
     radio = e.target.value;
     div.style.borderRadius = cambiarRadio();
 });
@@ -46,15 +46,15 @@ const cambiarShadow = () =>{
     return `${sombra1}px ${sombra2}px ${sombra3}px`;
 }
 
-inputSombra1.addEventListener('change', (e)=>{
+inputSombra1.addEventListener('input', (e)=>{
     sombra1 = e.target.value;
     div.style.boxShadow = cambiarShadow();
 });
-inputSombra2.addEventListener('change', (e)=>{
+inputSombra2.addEventListener('input', (e)=>{
     sombra2 = e.target.value;
     div.style.boxShadow = cambiarShadow();
 });
-inputSombra3.addEventListener('change', (e)=>{
+inputSombra3.addEventListener('input', (e)=>{
     sombra3 = e.target.value;
     div.style.boxShadow = cambiarShadow();
 });
