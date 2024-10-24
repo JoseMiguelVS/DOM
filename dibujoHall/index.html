@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dibujo de Hallowen</title>
     <style>
-        body{
+        body {
             width: 100vw;
             height: 100vh;
+            margin: 0;
             display: grid;
             place-items: center;
             font-family: Georgia, 'Times New Roman', Times, serif;
             background-color: darkslategrey;
         }
-        #lienzo{
+
+        #lienzo {
             color: rgb(29, 7, 128);
             border: 1px solid rgb(0, 0, 0);
             background-color: rgb(61, 0, 88);
         }
+
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        a:active {
+            background-color: #003f7f;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Mi dibujo con canvas</h1>
         <canvas id="lienzo" width="600" height="400"></canvas>
     </div>
+    <a href="../index.html">Atras</a>
     <script src="./app2.js"></script>
 </body>
+
 </html>
