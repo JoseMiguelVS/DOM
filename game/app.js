@@ -70,7 +70,7 @@ function checkEat() {
 function colicion() {
     for (let i = 2; i < snake.length; i++) {
         if (snake[0].x === snake[i].x && snake[0].y === snake[i].y) {
-            alert("PERDISTE  ni modos");
+            alert("PERDISTE ni modos");
             location.reload();
             break;
         }
